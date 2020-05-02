@@ -22,8 +22,8 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
   metadata:
-  name: guestbook-ui-2
-spec:
+name: guestbook-ui-2
+  spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
