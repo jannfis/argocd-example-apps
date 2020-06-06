@@ -1,7 +1,7 @@
 namePrefix: kustomize-
 
 resources:
-- https://github.com/jannfis/argocd-example-apps-priv/base
+- git@github.com/jannfis/argocd-example-apps-priv/base
 - guestbook-ui-deployment.yaml
 - guestbook-ui-svc.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
