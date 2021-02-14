@@ -609,7 +609,7 @@ kind: Job
 metadata:
   name: ingress-nginx-admission-patch
   annotations:
-    helm.sh/hook: pre-install,pre-upgrade,post-install,post-upgrade
+    helm.sh/hook: pre-install,pre-upgrade
     helm.sh/hook-delete-policy: before-hook-creation
   labels:
     helm.sh/chart: ingress-nginx-3.23.0
