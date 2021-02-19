@@ -557,7 +557,7 @@ subjects:
 ---
 # Source: ingress-nginx/templates/admission-webhooks/job-patch/job-createSecret.yaml
 apiVersion: batch/v1
-kind: Jobb
+kind: Job
 metadata:
   name: ingress-nginx-admission-create
   annotations:
@@ -570,7 +570,7 @@ metadata:
     app.kubernetes.io/version: 0.44.0
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: admission-webhook
-  namespace: ingress-nginx
+  namespace: ingress-nginx-nonexist
 spec:
   template:
     metadata:
