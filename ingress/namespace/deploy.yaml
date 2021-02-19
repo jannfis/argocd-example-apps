@@ -557,7 +557,7 @@ subjects:
 ---
 # Source: ingress-nginx/templates/admission-webhooks/job-patch/job-createSecret.yaml
 apiVersion: batch/v1
-kind: Job
+kind: Jobb
 metadata:
   name: ingress-nginx-admission-create
   annotations:
